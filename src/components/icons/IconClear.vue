@@ -1,0 +1,50 @@
+<template>
+  <svg
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    height="32px"
+    width="32px"
+    fill="#000000"
+    class="icon"
+  >
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g
+      id="SVGRepo_tracerCarrier"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></g>
+    <g id="SVGRepo_iconCarrier">
+      <defs>
+        <path
+          id="cross-a"
+          d="M0.292893219,1.70710678 C-0.0976310729,1.31658249 -0.0976310729,0.683417511 0.292893219,0.292893219 C0.683417511,-0.0976310729 1.31658249,-0.0976310729 1.70710678,0.292893219 L9.70710678,8.29289322 C10.0976311,8.68341751 10.0976311,9.31658249 9.70710678,9.70710678 C9.31658249,10.0976311 8.68341751,10.0976311 8.29289322,9.70710678 L0.292893219,1.70710678 Z"
+        ></path>
+        <path
+          id="cross-c"
+          d="M3.58578644,5 L0.292893219,1.70710678 C-0.0976310729,1.31658249 -0.0976310729,0.683417511 0.292893219,0.292893219 C0.683417511,-0.0976310729 1.31658249,-0.0976310729 1.70710678,0.292893219 L5,3.58578644 L8.29289322,0.292893219 C8.68341751,-0.0976310729 9.31658249,-0.0976310729 9.70710678,0.292893219 C10.0976311,0.683417511 10.0976311,1.31658249 9.70710678,1.70710678 L6.41421356,5 L9.70710678,8.29289322 C10.0976311,8.68341751 10.0976311,9.31658249 9.70710678,9.70710678 C9.31658249,10.0976311 8.68341751,10.0976311 8.29289322,9.70710678 L5,6.41421356 L1.70710678,9.70710678 C1.31658249,10.0976311 0.683417511,10.0976311 0.292893219,9.70710678 C-0.0976310729,9.31658249 -0.0976310729,8.68341751 0.292893219,8.29289322 L3.58578644,5 Z"
+        ></path>
+      </defs>
+      <g fill="none" fill-rule="evenodd">
+        <g transform="translate(8 6)">
+          <mask id="cross-b" fill="#ffffff">
+            <use xlink:href="#cross-a"></use>
+          </mask>
+          <use fill="#D8D8D8" fill-rule="nonzero" xlink:href="#cross-a"></use>
+          <g fill="#FFA0A0" mask="url(#cross-b)">
+            <rect width="24" height="24" transform="translate(-8 -6)"></rect>
+          </g>
+        </g>
+        <g transform="rotate(-90 12 5)">
+          <mask id="cross-d" fill="#ffffff">
+            <use xlink:href="#cross-c"></use>
+          </mask>
+          <use fill="#000000" fill-rule="nonzero" xlink:href="#cross-c"></use>
+          <g fill="#7600FF" mask="url(#cross-d)">
+            <rect width="24" height="24" transform="translate(-7 -7)"></rect>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</template>
