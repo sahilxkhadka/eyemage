@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import IconClear from '@/components/icons/IconClear.vue'
+import IconGithub from '@/components/icons/IconGithub.vue'
 import IconSearch from '@/components/icons/IconSearch.vue'
 import ImageCard from '@/components/ImageCard.vue'
 import { ref, type Ref } from 'vue'
@@ -73,8 +74,17 @@ console.log(images.value.length)
         >
           <IconClear />
         </button>
-        <div class="icon-wrapper">
+        <button type="submit" class="icon-wrapper">
           <IconSearch />
+        </button>
+        <div class="github-icon-container">
+          <a
+            href="https://github.com/sahilxkhadka/eyemage"
+            target="_blank"
+            class="github-btn"
+          >
+            <IconGithub />
+          </a>
         </div>
       </div>
     </form>
@@ -240,5 +250,40 @@ form:has(.input:focus) .title {
 .img-container .big {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+.github-icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.github-btn {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffff;
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background-color: #2d2e32;
+  border: 2px solid #2d2e32;
+  transition: all 0.45s;
+}
+
+.github-btn:hover {
+  transform: rotate(360deg);
+  transform-origin: center center;
+  background-color: #ffff;
+  color: #2d2e32;
+}
+
+.github-btn:hover .github-svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg)
+    brightness(103%) contrast(103%);
 }
 </style>
