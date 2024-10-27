@@ -35,7 +35,7 @@ onClickOutside(container, () => {
         <img :src="originalUrl" alt="" loading="eager" class="selected-image" />
       </div>
       <div class="action-buttons">
-        <button class="download-btn" v-on:click="() => handleDownload">
+        <button class="download-btn" v-on:click="() => handleDownload()">
           <span>Download</span>
         </button>
       </div>
